@@ -13,7 +13,7 @@ const Register = () => {
     setMessage('');
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const response = await axios.post('https://skillbattle.onrender.com/api/auth/register', formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
       navigate('/dashboard');

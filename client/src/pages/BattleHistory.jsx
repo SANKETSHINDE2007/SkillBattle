@@ -19,7 +19,7 @@ const BattleHistory = () => {
     const loadHistory = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:5000/api/battle-history',
+          'https://skillbattle.onrender.com/api/battle-history',
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setHistory(response.data.history || []);

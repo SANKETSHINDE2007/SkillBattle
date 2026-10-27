@@ -79,7 +79,7 @@ npm run dev
 
 Frontend: normally `http://localhost:5173`
 
-Backend health check: `http://localhost:5000/api/health`
+Backend health check: `https://skillbattle.onrender.com/api/health`
 
 ## Important
 

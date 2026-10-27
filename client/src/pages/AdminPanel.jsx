@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import AIQuestionGenerator from './AIQuestionGenerator';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://skillbattle.onrender.com/api';
 
 const emptyQuestion = {
   skill: 'Programming',
