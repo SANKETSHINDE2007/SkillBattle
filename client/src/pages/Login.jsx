@@ -13,7 +13,7 @@ const Login = () => {
     setMessage('');
     setLoading(true);
     try {
-      const response = axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`, formData);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`, formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
       navigate('/dashboard');
